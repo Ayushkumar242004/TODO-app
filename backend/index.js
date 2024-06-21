@@ -31,9 +31,9 @@ app.post("/todo",async function(req,res){//add something
 
 app.get("/todos",async function(req,res){//get all
     
-    const todos=await todo.find({});
+    // const todos=await todo.find({});
     res.json({
-        todos
+        todos:[]
     })
 })
 
